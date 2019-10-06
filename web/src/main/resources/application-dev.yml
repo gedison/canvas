@@ -1,0 +1,6 @@
+com.pastelpunk.canvas:
+  database:
+    hostname: localhost
+    port: 32769
+    keyspace: summaryfic
+
