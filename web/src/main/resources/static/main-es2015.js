@@ -252,10 +252,10 @@ function __importDefault(mod) {
 
 /***/ }),
 
-/***/ "./src/app/app-routing.module.ts":
-/*!***************************************!*\
-  !*** ./src/app/app-routing.module.ts ***!
-  \***************************************/
+/***/ "./src/app-routing.module.ts":
+/*!***********************************!*\
+  !*** ./src/app-routing.module.ts ***!
+  \***********************************/
 /*! exports provided: AppRoutingModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -265,10 +265,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _features_app_app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./features/app/app.component */ "./src/features/app/app.component.ts");
+/* harmony import */ var _features_canvas_canvas_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./features/canvas/canvas.component */ "./src/features/canvas/canvas.component.ts");
 
 
 
-const routes = [];
+
+
+const routes = [
+    { path: 'main', component: _features_app_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"] },
+    { path: 'canvas', component: _features_canvas_canvas_component__WEBPACK_IMPORTED_MODULE_4__["CanvasComponent"] },
+];
 let AppRoutingModule = class AppRoutingModule {
 };
 AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -282,76 +289,10 @@ AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
-/***/ "./src/app/app.component.css":
-/*!***********************************!*\
-  !*** ./src/app/app.component.css ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */");
-
-/***/ }),
-
-/***/ "./src/app/app.component.ts":
-/*!**********************************!*\
-  !*** ./src/app/app.component.ts ***!
-  \**********************************/
-/*! exports provided: AppComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-
-
-let AppComponent = class AppComponent {
-    constructor() {
-        this.title = 'np-app';
-    }
-};
-AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-root',
-        template: `
-    <!--The content below is only a placeholder and can be replaced.-->
-    <div style="text-align:center" class="content">
-      <h1>
-        Welcome to {{title}}!
-      </h1>
-      <span style="display: block">{{ title }} app is running!</span>
-      <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-    </div>
-    <h2>Here are some links to help you start: </h2>
-    <ul>
-      <li>
-        <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-      </li>
-      <li>
-        <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-      </li>
-      <li>
-        <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-      </li>
-    </ul>
-    <router-outlet></router-outlet>
-  `,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")).default]
-    })
-], AppComponent);
-
-
-
-/***/ }),
-
-/***/ "./src/app/app.module.ts":
-/*!*******************************!*\
-  !*** ./src/app/app.module.ts ***!
-  \*******************************/
+/***/ "./src/app.module.ts":
+/*!***************************!*\
+  !*** ./src/app.module.ts ***!
+  \***************************/
 /*! exports provided: AppModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -361,8 +302,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app-routing.module.ts");
+/* harmony import */ var _features_app_app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./features/app/app.component */ "./src/features/app/app.component.ts");
+/* harmony import */ var _features_canvas_canvas_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./features/canvas/canvas.component */ "./src/features/canvas/canvas.component.ts");
+
 
 
 
@@ -373,14 +316,15 @@ let AppModule = class AppModule {
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
-            _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]
+            _features_app_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
+            _features_canvas_canvas_component__WEBPACK_IMPORTED_MODULE_5__["CanvasComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-            _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"]
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
         ],
         providers: [],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+        bootstrap: [_features_app_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })
 ], AppModule);
 
@@ -418,6 +362,164 @@ const environment = {
 
 /***/ }),
 
+/***/ "./src/features/app/app.component.css":
+/*!********************************************!*\
+  !*** ./src/features/app/app.component.css ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvZmVhdHVyZXMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/features/app/app.component.ts":
+/*!*******************************************!*\
+  !*** ./src/features/app/app.component.ts ***!
+  \*******************************************/
+/*! exports provided: AppComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let AppComponent = class AppComponent {
+    constructor() {
+        this.title = 'np-app';
+    }
+};
+AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-root',
+        template: `
+    <!--The content below is only a placeholder and can be replaced.-->
+    <div style="text-align:center" class="content">
+      blah
+    </div>
+    <router-outlet></router-outlet>
+  `,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./app.component.css */ "./src/features/app/app.component.css")).default]
+    })
+], AppComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/features/canvas/canvas.component.ts":
+/*!*************************************************!*\
+  !*** ./src/features/canvas/canvas.component.ts ***!
+  \*************************************************/
+/*! exports provided: CanvasComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CanvasComponent", function() { return CanvasComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+
+
+
+
+let CanvasComponent = class CanvasComponent {
+    constructor() {
+        // setting a width and height for the canvas
+        this.width = 400;
+        this.height = 400;
+    }
+    ngAfterViewInit() {
+        // get the context
+        const canvasEl = this.canvas.nativeElement;
+        this.cx = canvasEl.getContext('2d');
+        // set the width and height
+        canvasEl.width = this.width;
+        canvasEl.height = this.height;
+        // set some default properties about the line
+        this.cx.lineWidth = 3;
+        this.cx.lineCap = 'round';
+        this.cx.strokeStyle = '#000';
+        // we'll implement this method to start capturing mouse events
+        this.captureEvents(canvasEl);
+    }
+    captureEvents(canvasEl) {
+        // this will capture all mousedown events from the canvas element
+        Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["fromEvent"])(canvasEl, 'mousedown')
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["switchMap"])((e) => {
+            // after a mouse down, we'll record all mouse moves
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["fromEvent"])(canvasEl, 'mousemove')
+                .pipe(
+            // we'll stop (and unsubscribe) once the user releases the mouse
+            // this will trigger a 'mouseup' event
+            Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["fromEvent"])(canvasEl, 'mouseup')), 
+            // we'll also stop (and unsubscribe) once the mouse leaves the canvas (mouseleave event)
+            Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["fromEvent"])(canvasEl, 'mouseleave')), 
+            // pairwise lets us get the previous value to draw a line from
+            // the previous point to the current point
+            Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["pairwise"])());
+        }))
+            .subscribe((res) => {
+            const rect = canvasEl.getBoundingClientRect();
+            // previous and current position with the offset
+            const prevPos = {
+                x: res[0].clientX - rect.left,
+                y: res[0].clientY - rect.top
+            };
+            const currentPos = {
+                x: res[1].clientX - rect.left,
+                y: res[1].clientY - rect.top
+            };
+            // this method we'll implement soon to do the actual drawing
+            this.drawOnCanvas(prevPos, currentPos);
+        });
+    }
+    drawOnCanvas(prevPos, currentPos) {
+        // incase the context is not set
+        if (!this.cx) {
+            return;
+        }
+        // start our drawing path
+        this.cx.beginPath();
+        // we're drawing lines so we need a previous position
+        if (prevPos) {
+            // sets the start point
+            this.cx.moveTo(prevPos.x, prevPos.y); // from
+            // draws a line from the start pos until the current position
+            this.cx.lineTo(currentPos.x, currentPos.y);
+            // strokes the current path with the styles we set earlier
+            this.cx.stroke();
+        }
+    }
+};
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('canvas', null)
+], CanvasComponent.prototype, "canvas", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
+], CanvasComponent.prototype, "width", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
+], CanvasComponent.prototype, "height", void 0);
+CanvasComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-canvas',
+        template: '<canvas #canvas></canvas>',
+        styles: ["canvas { border: 1px solid #000; }"]
+    })
+], CanvasComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/main.ts":
 /*!*********************!*\
   !*** ./src/main.ts ***!
@@ -430,7 +532,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm2015/platform-browser-dynamic.js");
-/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+/* harmony import */ var _app_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.module */ "./src/app.module.ts");
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
 
 
@@ -440,7 +542,7 @@ __webpack_require__.r(__webpack_exports__);
 if (_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].production) {
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["enableProdMode"])();
 }
-Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_3__["AppModule"])
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformBrowserDynamic"])().bootstrapModule(_app_module__WEBPACK_IMPORTED_MODULE_3__["AppModule"])
     .catch(err => console.error(err));
 
 

@@ -12,7 +12,6 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-
 @SpringBootApplication
 @EnableSwagger2
 @ComponentScan("com.pastelpunk.canvas")
@@ -25,7 +24,8 @@ public class Application {
     @Bean
     public ServletRegistrationBean servletRegistrationBean() {
         ServletRegistrationBean servlet = new ServletRegistrationBean(
-                new CamelHttpTransportServlet(), "/api/v1/camel/*");
+                new CamelHttpTransportServlet(),
+                "/api/v1/camel/*");
         servlet.setName("CamelServlet");
         return servlet;
     }

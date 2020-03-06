@@ -114,6 +114,7 @@ buildSrc/build
 /spring-*/build
 /src/asciidoc/build
 target/
+resources/static
 
 # Eclipse artifacts, including WTP generated manifests
 .classpath
